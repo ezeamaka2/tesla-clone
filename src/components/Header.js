@@ -21,12 +21,12 @@ const Header = () => {
 
         <Menu>
             {cars && cars.map((car, index) => (
-                <a key={index} href=''>{car}</a>
+                <a key={index} href='#'>{car}</a>
             ))}
         </Menu>
         <RightMenu>
-            <a href=''>Shop</a>
-            <a href=''>Account</a>
+            <a href='#'>Shop</a>
+            <a href='#'>Account</a>
             <CustomMenu onClick={toggleMenu} />
         </RightMenu>
         <BurgerMenu show={openMenu}>
@@ -55,7 +55,7 @@ export default Header
 const Container = styled.div`
     min-height: 60px;
     position: fixed;
-   width:100vw;
+    width:100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;

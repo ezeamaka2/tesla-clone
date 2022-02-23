@@ -1,5 +1,6 @@
 import React from 'react'
 import Section from './Section'
+import Footer from './Footer'
 import styled from 'styled-components'
 
 const Home = () => {
@@ -53,6 +54,8 @@ const Home = () => {
             backgroundImg= 'accessories.jpg'
             leftBtnText = 'Shop Now'
         />
+
+        <Footer />
     </Container>
   )
 }
